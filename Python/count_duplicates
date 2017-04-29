@@ -1,0 +1,10 @@
+import collections
+
+def duplicate_count(text):
+    text = str.lower(text) 
+    counter = 0
+    collect = collections.Counter(text)
+    for i in collect:
+        if collect[i] > 1:
+            counter += 1
+    return counter
