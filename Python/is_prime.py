@@ -9,3 +9,7 @@ def is_prime(num):
              return False
         k += 2
     return True
+
+#### 2 Line version (not mine)
+#def is_prime(num):
+#    return num > 1 and not any(num % n == 0 for n in range(2,num))
