@@ -6,7 +6,6 @@ def caesar_crypto_encode(text, shift):
     crypted = ''
     if not text or text.isspace() : return ''
     while shifter > len(abc):
-        
     for letter in text:
         if letter in abc:
             index = abc.index(letter)
